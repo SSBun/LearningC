@@ -10,6 +10,11 @@
 		B348535325AB2A0D002E3B70 /* Namespace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B348535125AB2A0D002E3B70 /* Namespace.cpp */; };
 		B348535725AB338D002E3B70 /* ConstType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B348535525AB338D002E3B70 /* ConstType.cpp */; };
 		B3F9714B25A04262006EE8E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F9714A25A04262006EE8E7 /* main.cpp */; };
+		C488685A25DFBFD200C4C46E /* InlineFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C488685825DFBFD200C4C46E /* InlineFunction.cpp */; };
+		C488685F25DFC40500C4C46E /* FunctionDefaultParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C488685D25DFC40500C4C46E /* FunctionDefaultParameter.cpp */; };
+		C488686325DFC70200C4C46E /* FunctionOverloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C488686125DFC70200C4C46E /* FunctionOverloading.cpp */; };
+		C48D0E5A25DF9DD0000676FB /* WeakC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C48D0E5825DF9DD0000676FB /* WeakC.cpp */; };
+		C4D451D225CE847900C711C2 /* CMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D451D125CE847900C711C2 /* CMemory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +36,16 @@
 		B348535625AB338D002E3B70 /* ConstType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConstType.hpp; sourceTree = "<group>"; };
 		B3F9714725A04262006EE8E7 /* C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F9714A25A04262006EE8E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C488685825DFBFD200C4C46E /* InlineFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InlineFunction.cpp; sourceTree = "<group>"; };
+		C488685925DFBFD200C4C46E /* InlineFunction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InlineFunction.hpp; sourceTree = "<group>"; };
+		C488685D25DFC40500C4C46E /* FunctionDefaultParameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionDefaultParameter.cpp; sourceTree = "<group>"; };
+		C488685E25DFC40500C4C46E /* FunctionDefaultParameter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FunctionDefaultParameter.hpp; sourceTree = "<group>"; };
+		C488686125DFC70200C4C46E /* FunctionOverloading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionOverloading.cpp; sourceTree = "<group>"; };
+		C488686225DFC70200C4C46E /* FunctionOverloading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FunctionOverloading.hpp; sourceTree = "<group>"; };
+		C48D0E5825DF9DD0000676FB /* WeakC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeakC.cpp; sourceTree = "<group>"; };
+		C48D0E5925DF9DD0000676FB /* WeakC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WeakC.hpp; sourceTree = "<group>"; };
+		C4D451D025CE847900C711C2 /* CMemory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CMemory.hpp; sourceTree = "<group>"; };
+		C4D451D125CE847900C711C2 /* CMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CMemory.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,12 @@
 				B348535225AB2A0D002E3B70 /* Namespace.hpp */,
 				B348535525AB338D002E3B70 /* ConstType.cpp */,
 				B348535625AB338D002E3B70 /* ConstType.hpp */,
+				C488685825DFBFD200C4C46E /* InlineFunction.cpp */,
+				C488685925DFBFD200C4C46E /* InlineFunction.hpp */,
+				C488685D25DFC40500C4C46E /* FunctionDefaultParameter.cpp */,
+				C488685E25DFC40500C4C46E /* FunctionDefaultParameter.hpp */,
+				C488686125DFC70200C4C46E /* FunctionOverloading.cpp */,
+				C488686225DFC70200C4C46E /* FunctionOverloading.hpp */,
 			);
 			path = "From C to C++";
 			sourceTree = "<group>";
@@ -74,10 +95,30 @@
 		B3F9714925A04262006EE8E7 /* C++ */ = {
 			isa = PBXGroup;
 			children = (
+				C48D0E5725DF9D94000676FB /* Weak Symbol & Weak Reference */,
+				C4D451CF25CE83F200C711C2 /* C Memory */,
 				B348535025AB28FA002E3B70 /* From C to C++ */,
 				B3F9714A25A04262006EE8E7 /* main.cpp */,
 			);
 			path = "C++";
+			sourceTree = "<group>";
+		};
+		C48D0E5725DF9D94000676FB /* Weak Symbol & Weak Reference */ = {
+			isa = PBXGroup;
+			children = (
+				C48D0E5825DF9DD0000676FB /* WeakC.cpp */,
+				C48D0E5925DF9DD0000676FB /* WeakC.hpp */,
+			);
+			path = "Weak Symbol & Weak Reference";
+			sourceTree = "<group>";
+		};
+		C4D451CF25CE83F200C711C2 /* C Memory */ = {
+			isa = PBXGroup;
+			children = (
+				C4D451D025CE847900C711C2 /* CMemory.hpp */,
+				C4D451D125CE847900C711C2 /* CMemory.cpp */,
+			);
+			path = "C Memory";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C488686325DFC70200C4C46E /* FunctionOverloading.cpp in Sources */,
 				B3F9714B25A04262006EE8E7 /* main.cpp in Sources */,
 				B348535725AB338D002E3B70 /* ConstType.cpp in Sources */,
+				C4D451D225CE847900C711C2 /* CMemory.cpp in Sources */,
+				C48D0E5A25DF9DD0000676FB /* WeakC.cpp in Sources */,
+				C488685A25DFBFD200C4C46E /* InlineFunction.cpp in Sources */,
 				B348535325AB2A0D002E3B70 /* Namespace.cpp in Sources */,
+				C488685F25DFC40500C4C46E /* FunctionDefaultParameter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GVFS746DQN;
+				DEVELOPMENT_TEAM = 7467638S34;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
